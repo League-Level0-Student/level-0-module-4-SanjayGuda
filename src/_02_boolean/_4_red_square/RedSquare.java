@@ -1,6 +1,7 @@
 package _02_boolean._4_red_square;
 
 import java.awt.Color;
+import java.io.IOException;
 
 import javax.swing.JOptionPane;
 
@@ -13,10 +14,10 @@ public class RedSquare {
 	static boolean drewRedTriangle = false;
 	static boolean drewBlueTriangle = false;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException, IOException {
 		
 		boolean isRed = false;
-		boolean isSquare = true;
+		boolean isSquare = false;
 		
 		// The && shown here means that both booleans must be true for the 
 		// entire if statement to be true. It is referred to as the "and"
@@ -24,9 +25,22 @@ public class RedSquare {
 		if(isRed && isSquare) {
 			drawRedSquare();
 		}
+		else if(!isRed && isSquare) {
+				drawBlueSquare();
+		}
+		else if(isRed && !isSquare) {
+			drawRedTriangle();
+		}
+		
+		
 		else {
-            JOptionPane.showMessageDialog(null, "No shape was drawn!");
+			Runtime.getRuntime().exec("say bro you suck at coding so yea this program would work if you actually knew coding hahahahaha you suck lol").waitFor();
+		
+			// TODO Auto-generated catch block
         }
+		
+			
+		}
 		
 		// 1. Run the program and notice no shape is drawn.
 		
@@ -65,10 +79,10 @@ public class RedSquare {
 		//    variables like you did in step 6. Make sure that when it draws
 		//    a shape that the pop-up correctly says what it drew. 
 		
-	}
+	
 	
 	static void drawRedSquare() {
-		Robot rob = new Robot();
+		Robot rob = new Robot("batman");
 		rob.penDown();
 		rob.setSpeed(100);
 		rob.setPenColor(Color.red);
@@ -81,7 +95,7 @@ public class RedSquare {
 	}	
 	
 	static void drawBlueSquare() {
-		Robot rob = new Robot();
+		Robot rob = new Robot("batman");
 		rob.penDown();
 		rob.setSpeed(100);
 		rob.setPenColor(Color.blue);
@@ -94,7 +108,7 @@ public class RedSquare {
 	}
 	
 	static void drawRedTriangle() {
-		Robot rob = new Robot();
+		Robot rob = new Robot("batman");
 		rob.penDown();
 		rob.setSpeed(100);
 		rob.setPenColor(Color.red);
@@ -108,7 +122,7 @@ public class RedSquare {
 	
 	static void drawBlueTriangle() {
 		
-		Robot rob = new Robot();
+		Robot rob = new Robot("batman");
 		rob.penDown();
 		rob.setSpeed(100);
 		rob.setPenColor(Color.blue);

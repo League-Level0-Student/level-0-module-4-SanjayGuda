@@ -5,11 +5,11 @@ import processing.core.PImage;
 
 /*
  * Goal: Put googly eyes on a face!
- * 
+ * no y tho
  * Instructions:
  * 1. Find an image on the Internet and drop it into the /images folder at the
  *    top level of this module. It can be anything as long as it has large eyes!
- * 
+ *
  * 2. Declare a variable for the image:
  *    PImage face;
  * 
