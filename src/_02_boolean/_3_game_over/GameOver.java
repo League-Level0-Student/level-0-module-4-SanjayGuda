@@ -24,7 +24,7 @@ public class GameOver {
 		
 		// 4. Tell the user the game is over outside the while loop.
 		try {
-			Runtime.getRuntime().exec("say this is a ransome note you have to pay your net worth which is 1 cent but it can even be lower and plus you are so poor so i dont think you can afford it hahahaha or else i will hire a hitman to kill you at a random time lol").waitFor();
+			Runtime.getRuntime().exec("say this is a ransome note you have to pay your net worth which is 1 cent but it can even be lower and plus you are so poor so i dont think you can afford it hahahaha or else something bad will happen to you in 24 hours").waitFor();
 		} catch (InterruptedException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -19,7 +19,7 @@ public class RedSquare {
 		boolean isRed = false;
 		boolean isSquare = false;
 		
-		// The && shown here means that both booleans must be true for the 
+		// The && shown here means that both boolean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s must be true for the 
 		// entire if statement to be true. It is referred to as the "and"
 		// operator. 
 		if(isRed && isSquare) {

@@ -4,9 +4,9 @@ import processing.core.PApplet;
 import processing.core.PImage;
 
 /*
- * Goal: Put googly eyes on a face!
- * no y tho
- * Instructions:
+ * Goal: Put godly eyes on a face!
+ * 
+ * Instruction:
  * 1. Find an image on the Internet and drop it into the /images folder at the
  *    top level of this module. It can be anything as long as it has large eyes!
  *
@@ -48,8 +48,8 @@ public class GooglyEyes extends PApplet {
     }
     
     @Override
-    public void setup() {
-
+    public void setup() { face = loadImage ("face.jpg") ; 
+    		
     }
 
     @Override
